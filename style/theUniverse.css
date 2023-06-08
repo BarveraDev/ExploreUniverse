@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-roboto: "Roboto Mono", monospace;
+}
+
+#universe {
+  background-image: url(../assets/nebulosa.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.2);
+  position: relative;
+  height: 100%;
+}
+
+.theUniverse {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  margin-left: 15rem;
+}
+
+.theUniverse h1 {
+  font-size: 7rem;
+  font-family: var(--ff-roboto);
+  color: #fff;
+}
+
+.theUniverse .text {
+  font-size: 2rem;
+  width: 70rem;
+  color: #fff;
+  margin-top: 2rem;
+  font-family: var(--ff-roboto);
+  font-weight: lighter;
+  line-height: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .theUniverse h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .theUniverse .text {
+    width: 50rem;
+    text-align: center;
+  }
+}

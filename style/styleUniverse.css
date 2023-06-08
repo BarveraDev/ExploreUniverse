@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-roboto: "Roboto Mono", monospace;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+#universe {
+  background-image: url(../assets/rviaLactea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.2);
+  position: relative;
+  height: 100%;
+}
+
+.nav-click {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.2rem;
+}
+
+.nav-click a {
+  font-size: 2.8rem;
+  font-family: var(--ff-roboto);
+  color: #c4c4cc;
+  text-decoration: none;
+}
+
+.nav-click a.active {
+  color: #fff;
+}
+
+.nav-click a {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+.nav-click a:hover {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 255, 255, 0.6);
+}

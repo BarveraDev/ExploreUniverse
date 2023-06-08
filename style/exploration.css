@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-roboto: "Roboto Mono", monospace;
+}
+
+#universe {
+  background-image: url(../assets/jupiter.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.2);
+  position: relative;
+  height: 100%;
+}
+
+.exploration {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  margin-left: 15rem;
+}
+
+.exploration h1 {
+  font-size: 7rem;
+  font-family: var(--ff-roboto);
+  color: #fff;
+}
+
+.exploration .text {
+  font-size: 2rem;
+  width: 100rem;
+  color: #fff;
+  margin-top: 2rem;
+  font-family: var(--ff-roboto);
+  font-weight: lighter;
+  line-height: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  .exploration {
+    margin-left: 10rem;
+  }
+
+  .exploration h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .exploration .text {
+    width: 60rem;
+    text-align: center;
+  }
+}
